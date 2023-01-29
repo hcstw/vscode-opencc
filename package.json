@@ -2,6 +2,10 @@
   "name": "vscode-opencc",
   "displayName": "vscode-opencc",
   "description": "translate with opencc 簡繁轉換(使用OpenCC)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hcstw/vscode-opencc.git"
+  },
   "version": "0.0.1",
   "icon": "https://raw.githubusercontent.com/hcstw/vscode-opencc/main/icon.png",
   "homepage": "https://github.com/hcstw/vscode-opencc",

@@ -1,0 +1,86 @@
+{
+  "name": "vscode-opencc",
+  "displayName": "vscode-opencc",
+  "description": "translate with opencc 簡繁轉換(使用OpenCC)",
+  "version": "0.0.1",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-opencc.chs2cht",
+    "onCommand:vscode-opencc.cht2chs",
+    "onCommand:vscode-opencc.chs2cht_selection",
+    "onCommand:vscode-opencc.cht2chs_selection"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-opencc.chs2cht",
+        "title": "chs to cht 簡體轉繁體"
+      },
+      {
+        "command": "vscode-opencc.cht2chs",
+        "title": "cht to chs 繁体转简体"
+      },
+      {
+        "command": "vscode-opencc.chs2cht_selection",
+        "title": "chs to cht (selection) 簡體轉繁體(選取區域)"
+      },
+      {
+        "command": "vscode-opencc.cht2chs_selection",
+        "title": "cht to chs (selection) 繁体转简体(选取区域)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "vscode-opencc.chs2cht",
+          "title": "簡體轉繁體"
+        },
+        {
+          "command": "vscode-opencc.cht2chs",
+          "title": "繁体转简体"
+        },
+        {
+          "command": "vscode-opencc.chs2cht_selection",
+          "title": "簡體轉繁體(選取區域)",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "vscode-opencc.cht2chs_selection",
+          "title": "繁体转简体(选取区域)",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/opencc-js": "^1.0.0",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "opencc-js": "^1.0.5"
+  }
+}

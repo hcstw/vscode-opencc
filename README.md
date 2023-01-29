@@ -15,5 +15,8 @@ vscode 繁簡轉換擴充功能
 
 Initial release of vscode-opencc
 
+### 1.0.1
+
+Update readme
 
 **Enjoy!**

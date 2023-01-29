@@ -3,7 +3,13 @@
   "displayName": "vscode-opencc",
   "description": "translate with opencc 簡繁轉換(使用OpenCC)",
   "version": "0.0.1",
-  "icon": "icon.png",
+  "icon": "https://raw.githubusercontent.com/hcstw/vscode-opencc/main/icon.png",
+  "homepage": "https://github.com/hcstw/vscode-opencc",
+  "license": "MIT",
+  "author": {
+    "name": "hsin yu chen",
+    "email": "hsinyu.chen@hardcoresoftware.ltd"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },

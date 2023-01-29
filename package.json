@@ -7,7 +7,7 @@
     "url": "https://github.com/hcstw/vscode-opencc.git"
   },
   "version": "0.0.1",
-  "icon": "https://raw.githubusercontent.com/hcstw/vscode-opencc/main/icon.png",
+  "icon": "icon.png",
   "homepage": "https://github.com/hcstw/vscode-opencc",
   "license": "MIT",
   "author": {

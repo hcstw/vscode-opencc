@@ -2,7 +2,7 @@
   "name": "vscode-opencc",
   "displayName": "vscode-opencc",
   "description": "translate with opencc 簡繁轉換(使用OpenCC)",
-  "publisher": "hardcore software ltd",
+  "publisher": "hardcoresoftwareltd",
   "repository": {
     "type": "git",
     "url": "https://github.com/hcstw/vscode-opencc.git"
